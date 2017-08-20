@@ -3,7 +3,7 @@
 ## **Initial/First Time Set-up**
 
 ##### **Step 1:**
-Clone the repository Get GitHub from top right HTTPS field.
+Clone the repository.
 
 ```
 #!git
