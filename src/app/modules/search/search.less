@@ -1,0 +1,89 @@
+#searchPage {
+  .search-panel {
+    margin-top: 20%;
+    &.panel-primary>.panel-heading {
+      color:black;
+      text-align: center;
+      background-color: white;
+      border-bottom: 2px solid @theme-base-color;
+      .panel-title {
+        font-size: 44px;
+        padding-bottom: 5px;
+      }
+    }
+    border: 0px;
+    .link-row {
+      font-size: 18px;
+      margin: 15px 0px 15px 0px;
+      text-align: center;
+    }
+  }
+
+  input[type="text"].form-control {
+    border-radius: 0px;
+    outline: none;
+    height: 55px;
+    margin: 10px auto;
+    .regular-font(@search-placeholder-font-size, @font-grey);
+    .no-horizontal-margin();
+    &:focus {
+      border: 1px solid @border-grey !important;
+      -webkit-box-shadow: 0 8px 6px -6px black;
+	    -moz-box-shadow: 0 8px 6px -6px black;
+	    box-shadow: 0 8px 6px -6px black;
+    }
+  }
+
+  input[type="text"].form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    .regular-font(@search-placeholder-font-size, @font-grey);
+  }
+  input[type="text"].form-contro::-moz-placeholder { /* Firefox 19+ */
+    .regular-font(@search-placeholder-font-size, @font-grey);
+  }
+  input[type="text"].form-contro:-ms-input-placeholder { /* IE 10+ */
+    .regular-font(@search-placeholder-font-size, @font-grey);
+  }
+  input[type="text"].form-contro:-moz-placeholder { /* Firefox 18- */
+    .regular-font(@search-placeholder-font-size, @font-grey);
+  }
+  .md-button.search-btn {
+    background-color: @theme-base-color!important;
+    padding:10px 16px;
+    text-transform: none;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    margin: 10px auto;
+    display:block;
+  }
+  .error-row {
+    margin: 0px;
+    border-radius: 0px
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0 30px white inset;
+  }
+  [uib-typeahead-popup].dropdown-menu {
+    overflow-y: auto;
+    max-height: 250px;
+    width: 95%;
+    border-radius: 0px;
+    border: 1px solid @border-grey !important;
+    .regular-font(@search-placeholder-font-size, black);
+    .active a, .active a:hover, .active a:focus, .active a:active {
+      background-color: @theme-base-color!important;
+    }
+    li, li:active, li:focus {
+      outline: none;
+    }
+  }
+  div#searchTypeAhead {
+    div.dropdown.dropdown-toggle{
+      i { padding-right: 10px; font-size: 12px; }
+      .regular-font(@search-placeholder-font-size, @font-grey);
+    }
+  }
+
+}

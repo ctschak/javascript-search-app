@@ -1,0 +1,32 @@
+{
+  "name": "javascript-search-app",
+  "description": "This is a demo javascript free text search SPA. Developed by Chakra",
+  "authors": [
+    "Chakravarthy Ravichandran <surathy2003@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bower"
+  ],
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-resource": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular-material": "^1.1.4",
+    "less": "^2.7.2",
+    "angular-bootstrap": "^2.5.0",
+    "lodash": "^4.17.4",
+    "angular-lodash-module": "^1.2.0"
+  }
+}

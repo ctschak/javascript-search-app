@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="spaApp">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+      <title>Search Singe Page App</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="vendor/angular-material/angular-material.css">
+      <link rel="stylesheet" href="vendor/angular-bootstrap/ui-bootstrap-csp.css">
+      <link rel="stylesheet/less" type="text/css" href="styles/global.less" />
+      <!-- Custom Fonts -->
+      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <script src="vendor/less/dist/less.js" type="text/javascript"></script>
+      </script>
+  </head>
+  <body>
+    <!-- Application view starts-->
+    <div class="wrapper login-page">
+      <div ui-view="header"></div>
+      <div id="page-wrapper" class="col-sm-12 search-container" ui-view="search"></div>
+    </div>
+    <!-- Application view ends-->
+    <!-- VENDOR SCRIPTS -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- AngularJs Scripts -->
+    <script src="vendor/angular/angular.min.js"></script>
+    <!-- Angular Material dependencies -->
+    <script src="vendor/angular-animate/angular-animate.js"></script>
+    <script src="vendor/angular-aria/angular-aria.js"></script>
+    <script src="vendor/angular-messages/angular-messages.js"></script>
+    <script src="vendor/angular-material/angular-material.js"></script>
+    <!-- Angular bootstrap + animate(required) -->
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- script src="vendor/angular-sanitize/angular-sanitize.js"></script -->
+    <script src="vendor/angular-resource/angular-resource.js"></script>
+    <script src="vendor/lodash/dist/lodash.js"></script>
+    <script src="vendor/angular-lodash-module/angular-lodash-module.js"></script>
+
+    <!-- APP SCRIPTS -->
+    <script src="app/main/app.js"></script>
+    <script src="app/modules/search/search.controller.js"></script>
+    <script src="app/services/search.service.js"></script>
+  </body>
+</html>

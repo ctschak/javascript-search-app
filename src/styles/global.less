@@ -1,0 +1,62 @@
+/** Less Variables **/
+@theme-base-color: #ff9e16;
+@form-bg-color: #F7F7F7;
+@font-body-color: #000;
+@error-red:#a94442;
+@success-green: #1ABB9C;
+@border-grey: #cccccc;
+@font-grey: #888888;
+@default-font-size: 14px;
+@body-color: #ffffff;// #f0f4f5;
+@search-placeholder-font-size: 20px;
+/** Imports **/
+@import "./imports.less";
+
+body, html { height: 100%; }
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  .regular-font(@default-font-size, @font-body-color);
+  font-weight: 400;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body{
+  background-color: white;//@body-color;
+}
+
+.text-success {
+  color: @success-green;
+}
+
+.text-error {
+  color: @error-red;
+}
+/** Global View and Wrapper class**/
+.search-container {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  position: static;
+  overflow: hidden;
+}
+.wrapper:before,
+.wrapper:after {
+  content: " ";
+  display: table;
+}
+.wrapper:after {
+  clear: both;
+}
+/** Font **/
+/* H1 - H6 font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  .default-font();
+}
