@@ -3,7 +3,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="search-panel panel panel-primary">
                 <div class="panel-heading">
-                    <h2 class="panel-title"><strong>Search your financial</strong></h2>
+                    <h2 class="panel-title"><strong>Search your FinTechs</strong></h2>
                 </div>
                 <div ng-show="error" class="alert alert-danger row error-row">
                   <span>{{ error.message }}</span>
@@ -13,14 +13,24 @@
                   <form role="form" ng-submit="search()">
                     <fieldset>
                       <div class="form-group row" >
-                        <div class="col-md-10">
+                        <div class="col-md-10" id="searchTypeAhead">
                           <input class="form-control"
                             placeholder="Search financial institutions"
-                            ng-model="search.text"
+                            ng-model="searchText"
                             type="text"
                             autofocus
                             autocomplete="off"
+                            uib-typeahead="fin as fin.name for fin in search($viewValue)"
+                            typeahead-loading="loadSearchResults"
+                            typeahead-template-url="app/modules/search/search-dropdown.html"
+                            typeahead-no-results="noResults"
                             value=""></input>
+                          <div ng-show="loadSearchResults"  auto-close="disabled" is-open="true" uib-dropdown uib-dropdown-toggle>
+                            <i class="glyphicon glyphicon-refresh"></i> Loading...
+                          </div>
+                          <div ng-show="noResults" auto-close="disabled" is-open="true" uib-dropdown uib-dropdown-toggle>
+                            <i class="glyphicon glyphicon-remove"></i> No Results Found
+                          </div>
                         </div>
                         <div class="col-md-2">
                           <md-button type="submit" class="md-primary md-raised btn-block search-btn">

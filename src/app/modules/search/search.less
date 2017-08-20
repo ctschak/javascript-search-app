@@ -25,6 +25,7 @@
     height: 55px;
     margin: 10px auto;
     .regular-font(@search-placeholder-font-size, @font-grey);
+    .no-horizontal-margin();
     &:focus {
       border: 1px solid @border-grey !important;
       -webkit-box-shadow: 0 8px 6px -6px black;
@@ -64,4 +65,19 @@
   input:-webkit-autofill:focus {
       -webkit-box-shadow: 0 0 0 30px white inset;
   }
+  [uib-typeahead-popup].dropdown-menu {
+    overflow-y: auto;
+    max-height: 250px;
+    width: 95%;
+    border-radius: 0px;
+    border: 1px solid @border-grey !important;
+    .regular-font(@search-placeholder-font-size, black);
+  }
+  div#searchTypeAhead {
+    div.dropdown.dropdown-toggle{
+      i { padding-right: 10px; font-size: 12px; }
+      .regular-font(@search-placeholder-font-size, @font-grey);
+    }
+  }
+
 }

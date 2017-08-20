@@ -20,7 +20,7 @@
     <!-- Application view starts-->
     <div class="wrapper login-page">
       <div ui-view="header"></div>
-      <div id="page-wrapper" ng-class="col-sm-12 global-view" ui-view="search"></div>
+      <div id="page-wrapper" class="col-sm-12 search-container" ui-view="search"></div>
     </div>
     <!-- Application view ends-->
     <!-- VENDOR SCRIPTS -->
@@ -46,6 +46,6 @@
     <!-- APP SCRIPTS -->
     <script src="app/main/app.js"></script>
     <script src="app/modules/search/search.controller.js"></script>
-
+    <script src="app/services/search.service.js"></script>
   </body>
 </html>
