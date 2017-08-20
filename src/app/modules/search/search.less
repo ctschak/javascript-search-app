@@ -72,6 +72,12 @@
     border-radius: 0px;
     border: 1px solid @border-grey !important;
     .regular-font(@search-placeholder-font-size, black);
+    .active a, .active a:hover, .active a:focus, .active a:active {
+      background-color: @theme-base-color!important;
+    }
+    li, li:active, li:focus {
+      outline: none;
+    }
   }
   div#searchTypeAhead {
     div.dropdown.dropdown-toggle{

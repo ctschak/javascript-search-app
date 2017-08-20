@@ -8,7 +8,7 @@ spaApp.controller('searchCtrl', function ($scope, $rootScope, $log, $state, $sta
       var payload = {'q': text};
       if (text !== '' && text !== undefined) {
         SearchService.searchFinTech(payload, function (data) {
-          $log.info("data" + JSON.stringify(data));
+          $log.debug("data" + JSON.stringify(data));
           var filteredProds = $filter('filter')(data.products, text);
           return deferred.resolve(filteredProds);
         });
