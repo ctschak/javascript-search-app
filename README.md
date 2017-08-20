@@ -6,7 +6,6 @@
 Clone the repository.
 
 ```
-#!git
 git clone https://github.com/ctschak/javascript-search-app.git
 ```
 
@@ -14,14 +13,12 @@ git clone https://github.com/ctschak/javascript-search-app.git
 Install dependencies
 
 ```
-#!git
 npm install
 ```
 ##### **Step 3:**
 Start the application
 
 ```
-#!git
 npm start
 ```
 
@@ -32,13 +29,11 @@ Access the application using http://localhost:7000
 
 #### 1. Clean your node/bower installations
 ```
-#!git
 npm run clean
 ```
 
 #### 2. Deep Clean and install - this will clean npm cache
 
 ```
-#!git
 npm run clean-install
 ```
